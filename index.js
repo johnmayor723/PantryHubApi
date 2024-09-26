@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const morgan = require('morgan');
+//const morgan = require('morgan');
 
 // Load env variables
 dotenv.config();
@@ -13,10 +13,10 @@ const app = express();
 // Middleware
 app.use(express.json()); // Parse JSON bodies
 app.use(cors()); // Enable CORS
-app.use(morgan('dev')); // Log HTTP requests
+//app.use(morgan('dev')); // Log HTTP requests
 
 // Database connection
-const connectDB = async () => {
+/*const connectDB = async () => {
   try {
     await mongoose.connect("mongodb+srv://admin:majoje1582@cluster0.cqudxbr.mongodb.net/?retryWrites=true&w=majority"
 , {
@@ -31,7 +31,7 @@ const connectDB = async () => {
 };
 
 // Call the DB connection function
-connectDB();
+connectDB();*/
 
 // Test route
 app.get('/', (req, res) => {

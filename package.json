@@ -1,36 +1,29 @@
-{
+{{
   "name": "pantryhubapi",
   "version": "1.0.0",
+  "description": "API for Pantry Hub application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  {
-  "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.0.0",
-    "dotenv": "^16.0.3",
-    "cors": "^2.8.5",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.0",
-    "express-validator": "^6.14.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  }
-},
-  "engines": {
-    "node": ">=14.0.0"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "foodshop",
-    "api",
-    "nodejs",
-    "express",
-    "ecommerce"
+    "pantry",
+    "hub",
+    "API",
+    "foodshop"
   ],
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1", 
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
