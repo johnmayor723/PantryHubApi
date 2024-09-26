@@ -18,7 +18,8 @@ app.use(morgan('dev')); // Log HTTP requests
 // Database connection
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.DB_URL, {
+    await mongoose.connect("mongodb+srv://admin:majoje1582@cluster0.cqudxbr.mongodb.net/?retryWrites=true&w=majority"
+, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
